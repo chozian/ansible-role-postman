@@ -39,7 +39,7 @@
       get_url:
         url: '{{ postman_redis_url }}'
         dest: '{{ postman_download_dir }}/{{ postman_redis_filename }}'
-        force: '{{ postman_latest_version != postman_existing_download_version }}'
+        force: yes
         use_proxy: yes
         validate_certs: yes
         mode: 'u=rw,go=r'
